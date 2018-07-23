@@ -1,0 +1,220 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+
+/* Normalize
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input {
+  overflow: visible
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+[type=button] {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+[type=button]:-moz-focusring {
+  outline: ButtonText dotted 1px
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #ffd89b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+.container {
+  background-color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  border: 1px solid #333;
+}
+
+.news {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -.05rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+@media (min-width: 550px) {
+  h5 {
+    font-size: 2.4rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+#intro {
+  font-size: 20px;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input[type="button"]:hover, input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0;
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="text"] {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 2.5rem;
+}
+
+.output {
+  padding: 20px;
+  display: none;
+}
+
+.search-container {
+  padding: 0 20px;
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.visible {
+  display: block;
+}
