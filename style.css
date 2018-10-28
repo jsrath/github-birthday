@@ -18,7 +18,7 @@
 /* Normalize
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-input {
+/* input {
   overflow: visible
 }
 
@@ -38,23 +38,23 @@ input {
   margin: 0
 }
 
-[type=button] {
+[type=submit] {
   -webkit-appearance: button
 }
 
-[type=button]::-moz-focus-inner {
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0
 }
 
-[type=button]:-moz-focusring {
+[type=submit]:-moz-focusring {
   outline: ButtonText dotted 1px
 }
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit
-}
+} */
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -69,11 +69,8 @@ body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #ffd89b;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+  background: linear-gradient(to right, #19547b, #ffd89b);
 }
 
 .container {
@@ -128,11 +125,10 @@ p {
   font-size: 20px;
 }
 
-
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-input[type="button"] {
+input[type="submit"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -152,7 +148,7 @@ input[type="button"] {
   box-sizing: border-box;
 }
 
-input[type="button"]:hover, input[type="button"]:focus {
+input[type="submit"]:hover, input[type="submit"]:focus {
   color: #333;
   border-color: #888;
   outline: 0;
@@ -201,15 +197,6 @@ p {
 
 .search-container {
   padding: 0 20px;
-}
-
-/* Clearing
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* JS

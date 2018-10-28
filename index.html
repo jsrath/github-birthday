@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123354863-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-123354863-1');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <title>GitHub Birthday | Find out what happened on the day you created your GitHub account!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="search-container">
-      <p id="intro">Find out what happened on the day you created your GitHub account!</p>
-      <p>
-        <label for="username">Enter Your GitHub Username</label>
-      </p>
-      <input type="text" name="username" id="username">
-      <input type="button" id="button" value="Submit">
+      <form id="form">
+        <p id="intro">Find out what happened on the day you created your GitHub account!</p>
+        <p>
+          <label for="username">Enter Your GitHub Username</label>
+        </p>
+        <input type="text" name="username" id="username">
+        <input type="submit" id="button" value="Submit">
+      </form>
     </div>
     <div class="output">
       <h5>Your GitHub was created on:
@@ -27,7 +38,7 @@
         <span id=daysOld></span> days old.</h5>
       <div class="news">
         <h5>On the day your Github was created in
-          <span id=wikiYear></span>
+          <span id=wikiYear></span><span>:</span>
         </h5>
         <h5 id=news></h5>
       </div>
